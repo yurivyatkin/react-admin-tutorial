@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { List, Datagrid, TextField, ReferenceField } from 'react-admin';
+import {
+  List,
+  Datagrid,
+  TextField,
+  ReferenceField,
+  EditButton,
+} from 'react-admin';
 
 export const PostList = (props) => (
   <List {...props}>
@@ -9,6 +15,7 @@ export const PostList = (props) => (
         <TextField source="name" />
       </ReferenceField>
       <TextField source="title" />
+      <EditButton />
     </Datagrid>
   </List>
 );
